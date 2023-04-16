@@ -8,7 +8,7 @@
             Weight = weight;
             Growth = growth;
         }
-        public byte Age { get; set; }
+        public byte Age { get; private set; }
         public float Weight { get; private set; }
         public byte Growth { get; private set; }
     }
