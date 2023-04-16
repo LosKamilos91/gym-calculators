@@ -1,5 +1,8 @@
-﻿using gym_calculators.MainMenu;
+﻿using gym_calculators.Calculators;
+using gym_calculators.MainMenu;
 using gym_calculators.Other;
+using gym_calculators.Person;
+using System.Runtime.Intrinsics.X86;
 
 int minimumValueForAge = 10;
 int minimumValueForWeight = 30;
@@ -23,3 +26,10 @@ while (growth < minimumValueForGrowth || byte.MaxValue < growth)
     Console.WriteLine($"Wrong value ({minimumValueForGrowth} - {byte.MaxValue}). Try Again! ");
     growth = QuestionsForPerson.QuestionForPerson<byte>("Growth");
 }
+
+Person person = new Person(age, weight, growth);
+Console.WriteLine("Ok. Everythink looks good.");
+
+BMI bmi = new BMI(person);
+Console.WriteLine();
+Console.WriteLine($"Your BMI: {bmi.PersonBMI:F2}");
