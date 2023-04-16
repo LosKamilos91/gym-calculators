@@ -26,10 +26,10 @@ while (growth < minimumValueForGrowth || byte.MaxValue < growth)
     Console.WriteLine($"Wrong value ({minimumValueForGrowth} - {byte.MaxValue}). Try Again! ");
     growth = QuestionsForPerson.QuestionForPerson<byte>("Growth");
 }
-
 Person person = new Person(age, weight, growth);
 Console.WriteLine("Ok. Everythink looks good.");
-
+//Calculators
 BMI bmi = new BMI(person);
+//Result
 Console.WriteLine();
-Console.WriteLine($"Your BMI: {bmi.PersonBMI:F2}");
+Console.WriteLine($"Your BMI: {bmi.PersonBMI:F2} ({bmi.ResultPersonBMI()})");
