@@ -2,7 +2,6 @@
 using gym_calculators.MainMenu;
 using gym_calculators.Other;
 using gym_calculators.Person;
-using System.Runtime.Intrinsics.X86;
 
 int minimumValueForAge = 10;
 int minimumValueForWeight = 30;
