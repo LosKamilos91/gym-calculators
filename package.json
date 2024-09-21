@@ -4,7 +4,8 @@
     "description": "Calculators to help calculate essential training information",
     "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "bmi": "node features/bmi.js"
     },
     "repository": {
         "type": "git",
