@@ -1,0 +1,23 @@
+{
+    "name": "gym-calculators",
+    "version": "0.1.0",
+    "description": "Calculators to help calculate essential training information",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LosKamilos91/gym-calculators.git"
+    },
+    "author": "Kamil Orzechowski <k.orzechowski.dev@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/LosKamilos91/gym-calculators/issues"
+    },
+    "homepage": "https://github.com/LosKamilos91/gym-calculators#readme",
+    "devDependencies": {
+        "@types/jest": "^29.5.13",
+        "jest": "^29.7.0"
+    }
+}
