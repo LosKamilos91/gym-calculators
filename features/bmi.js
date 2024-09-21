@@ -9,7 +9,7 @@ function commandCLI() {
 }
 
 function normsBMI() {
-    // TODO
+    //
 }
 
 module.exports = {};
