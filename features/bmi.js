@@ -25,6 +25,22 @@ function commandCLI() {
         return 'Error: <growth> cannot be empty';
     }
 
+    if (bodyWeight < 10) {
+        return 'Error: Incorrect value for <bodyWeight>. Minimum value is 10';
+    }
+
+    if (growth < 100) {
+        return 'Error: Incorrect value for <growth>. Minimum value is 100';
+    }
+
+    if (bodyWeight > 250) {
+        return 'Error: Incorrect value for <bodyWeight>. Maximum value is 250';
+    }
+
+    if (growth > 230) {
+        return 'Error: Incorrect value for <growth>. Maximum value is 230';
+    }
+
     if (typeof bodyWeight === 'string' || typeof growth === 'string') {
         const weight = bodyWeight;
         const grw = growth;
@@ -38,17 +54,7 @@ function commandCLI() {
         }
     }
 
-    if (bodyWeight < 10) {
-        return 'Error: Incorrect value for <bodyWeight>. Minimum value is 10';
-    } else if (growth < 100) {
-        return 'Error: Incorrect value for <growth>. Minimum value is 100';
-    } else if (bodyWeight > 250) {
-        return 'Error: Incorrect value for <bodyWeight>. Maximum value is 250';
-    } else if (growth > 230) {
-        return 'Error: Incorrect value for <growth>. Maximum value is 230';
-    } else {
-        return calculateBMI(bodyWeight, growth);
-    }
+    return calculateBMI(bodyWeight, growth);
 }
 
 function normsBMI() {
