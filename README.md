@@ -1,4 +1,4 @@
-# Gym Calculator App
+# Gym Calculator App ![image](https://geps.dev/progress/25)
 
 An app designed to help gym-goers track their progress, offering useful calculations such as:
 
